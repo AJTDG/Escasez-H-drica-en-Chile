@@ -1,0 +1,124 @@
+/* Estilos Generales */
+body {
+    background-color: #f4f6f9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Contenedor Principal */
+.quiz-container {
+    background-color: #ffffff;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 800px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+/* Barra de Progreso */
+#progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#progress-bar {
+    height: 10px;
+    background-color: #3498db;
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Preguntas y Respuestas */
+.question-text {
+    font-size: 1.3rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.answer-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin: 0.7rem 0;
+    background-color: #f8f9fa;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.answer-btn:hover:not(:disabled) {
+    background-color: #e9ecef;
+    border-color: #3498db;
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.correct {
+    background-color: #d1e7dd;
+    border-color: #28a745;
+    color: #0f5132;
+    font-weight: bold;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #842029;
+}
+
+/* Pantalla de Resultados */
+#results-container {
+    text-align: center;
+}
+
+#score-text {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin: 2.5rem 0;
+}
+
+#restart-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#restart-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none;
+}
